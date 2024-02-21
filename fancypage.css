@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@font-face {
+    font-family: "Protest Strike";
+    src: url("fonts/ProtestStrike-Regular.woff") format(woff);
+}
+
+.page-title {
+    margin: 0.5em;
+    font-family: "Protest Strike";
+    color: rgb(204, 0, 0);
+    font-weight: lighter;
+    font-size: 5em;
+} 
+
+
+.container {
+    background-color: black;    
+}
+
+.head-er {
+    size: 3em;
+    font-family: "Protest Strike";
+    font-weight: lighter;
+    color: rgb(204, 0, 0);
+    font-size: 6em;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color: rgb(204, 0, 0);
+    position: relative;
+}
+a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: rgb(255, 188, 188);
+    bottom:0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+body,html {
+    background-color: black;
+}
